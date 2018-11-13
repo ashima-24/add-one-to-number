@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 vector<int> Solution::plusOne(vector<int> &A) {
     
     int b=A.size() - 1;
@@ -21,4 +26,8 @@ vector<int> Solution::plusOne(vector<int> &A) {
     A.erase(A.begin(), iter);
     
     return A;
+}
+
+int main() {
+    return 0;
 }
