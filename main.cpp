@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<int> Solution::plusOne(vector<int> &A) {
+vector<int> plusOne(vector<int> &A) {
     
     int b=A.size() - 1;
     int carry = 1;
@@ -28,6 +28,13 @@ vector<int> Solution::plusOne(vector<int> &A) {
     return A;
 }
 
-int main() {
+int main(int argc, char **argv) {
+    vector<int> A={1,2,3,4,5,9};
+    
+    plusOne(A);
+    
+    for(int i=0;i<A.size();i++)
+         cout<<A[i];
+   
     return 0;
 }
