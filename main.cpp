@@ -1,4 +1,9 @@
-vector<int> Solution::plusOne(vector<int> &A) {
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> plusOne(vector<int> &A) {
     
     int b=A.size() - 1;
     int carry = 1;
@@ -21,4 +26,15 @@ vector<int> Solution::plusOne(vector<int> &A) {
     A.erase(A.begin(), iter);
     
     return A;
+}
+
+int main(int argc, char **argv) {
+    vector<int> A={1,2,3,4,5,9};
+    
+    plusOne(A);
+    
+    for(int i=0;i<A.size();i++)
+         cout<<A[i];
+   
+    return 0;
 }
